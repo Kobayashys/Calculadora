@@ -6,7 +6,7 @@ package com.mycompany.calculadorapre;
 
 /**
  *
- * @author vinic
+ * @author Henrique
  */
 import java.util.Stack;
 import java.util.Scanner;
