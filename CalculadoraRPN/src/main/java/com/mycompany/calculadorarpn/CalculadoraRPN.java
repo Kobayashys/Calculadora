@@ -6,7 +6,7 @@ package com.mycompany.calculadorarpn;
 
 /**
  *
- * @author vinic
+ * @author henrique
  */
 import java.util.Stack;
 import java.util.Scanner;
@@ -23,13 +23,13 @@ public class CalculadoraRPN {
     public static double avaliarExpressao(String expressao) {
         Stack<Double> pilha = new Stack<>();
 
-        // Iterar sobre cada caractere da expressão
+        
         for (char c : expressao.toCharArray()) {
             if (Character.isDigit(c)) {
-                // É um número, empilha
+               
                 pilha.push(Double.parseDouble(String.valueOf(c)));
             } else {
-                // É um operador, realiza a operação e empilha o resultado
+               
                 double b = pilha.pop();
                 double a = pilha.pop();
                 double resultado = realizarOperacao(a, b, c);
